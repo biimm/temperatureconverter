@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
                 int number = Integer.parseInt(input.getText().toString());
                 Body body = new Body(number);
                 final TextView output = findViewById(R.id.output_text);
-                String show = Integer.toString(body.tranform_c_to_f());
+                String show = Integer.toString(body.tranformC_to_F());
                 output.setText(show);
             }
         });
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 int number = Integer.parseInt(input.getText().toString());
                 Body body = new Body(number);
                 final TextView output = findViewById(R.id.output_text);
-                String show = String.format("%.2f", body.tranform_f_to_c());
+                String show = String.format("%.2f", body.tranformF_to_C());
                 output.setText(show);
             }
         });
